@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F0DDF0"
+        android:text="calculator"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toStartOf="@+id/btn4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="#E6E2BF"
+        android:text="Words"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FEC8D8"
+        android:text="Dice Roll"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn3"
+        app:layout_constraintEnd_toStartOf="@+id/lemonade_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#BED8D0"
+        android:text="Affirmation"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn6"
+        app:layout_constraintEnd_toStartOf="@+id/btn5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lemonade_button"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFDFD3"
+        android:text="Lemonade"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="#F6D0ED"
+        android:text="Game"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn6" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#BEB7C8"
+        android:text="Dessert"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn3" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#E1CBB5"
+        android:text="Project 2"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/circular_button_background"
+        android:backgroundTint="#E0BBE4"
+        android:onClick="showToast"
+        android:text="!"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toStartOf="@+id/lemonade_button"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="From Fawaz"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

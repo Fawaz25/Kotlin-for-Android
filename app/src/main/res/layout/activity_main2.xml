@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="105dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="4dp"
+        android:text="1"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/d1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="94dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="#FEC8D8"
+        android:rotationY="-1"
+        android:text="Roll"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d1" />
+
+    <ImageView
+        android:id="@+id/d1"
+        android:layout_width="252dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/d1"
+        tools:srcCompat="@drawable/d1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
